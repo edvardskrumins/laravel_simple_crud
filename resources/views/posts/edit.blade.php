@@ -10,6 +10,9 @@
     {{Form::label('body', 'Body')}}
     {{Form::textarea('body', $post->body, ['class' => 'form-control', 'placeholder' => 'Body'])}}
   </div>
+  <div class="form-group">
+    {{Form::file('cover_image')}}
+  </div>
   {{Form::hidden('_method', 'PUT')}}
   {{Form::submit('Submit', ['class' => 'btn-btn-primary'])}}
 {!! Form::close() !!}
